@@ -54,16 +54,16 @@ body{
 .job-item-text{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .job-item img{
-  width: 7rem;
+  width: 5rem;
 }
 
 .company-container{
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -73,7 +73,7 @@ body{
 
 .new-feat{
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   text-transform: uppercase;
   align-items: center;
 }
@@ -81,7 +81,7 @@ body{
 .new{
   background-color: var(--primary);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 50px;
 }
 
@@ -92,7 +92,7 @@ body{
 .featured{
   background-color: var(--dark-fg);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 50px;
 }
 
@@ -106,6 +106,10 @@ body{
   opacity: 0.5;
 }
 
+.job-item-text{
+  padding-top: 1rem;
+}
+
 .line{
   width: 90%;
   padding-top: 0.1rem;
@@ -115,7 +119,7 @@ body{
 .filters{
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .filter-tab{
