@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+:root{
+  --bg-color: hsl(180, 52%, 96%);
+  --filter-tab-color: hsl(180, 31%, 95%);
+  --primary: hsl(180, 29%, 50%);
+  --fg-color: hsl(180, 8%, 52%);
+  --dark-fg: hsl(180, 14%, 20%);
+  --shadow: 3px 12px 30px -10px rgba(0,0,0,0.20)
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan';
+}
+
+body{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.jobs-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.job-item{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90vw;
+  border-radius: 10px;
+  padding: 3rem;
+  padding-top: 7rem;
+  box-shadow: var(--shadow);
+  font-size: 1rem;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.job-item-content{
+  margin-top: -10rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-item-text{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-item img{
+  width: 7rem;
+}
+
+.company-container{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.company-container > h3{
+  color: var(--primary);
+}
+
+.new-feat{
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.new{
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.new p{
+  padding-top: 0.25rem;
+}
+
+.featured{
+  background-color: var(--dark-fg);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.featured p{
+  padding-top: 0.25rem;
+}
+
+.job-item ul{
+  display: flex;
+  gap: 2.25rem;
+  opacity: 0.5;
+}
+
+.line{
+  width: 90%;
+  padding-top: 0.1rem;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.filters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.filter-tab{
+  padding: 1rem;
+  background-color: var(--filter-tab-color);
+  color: var(--primary);
+  border-radius: 10px;
+}
+
+.filters-display-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.filters-display{
+  display: flex;
+  margin-top: 2rem;
+  padding: 2rem 3rem;
+  width: 90vw;
+  background-color: white;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.filter-tabs-container{
+  display: flex;
+  gap: 2rem;
+  flex: 4;
+  flex-wrap: wrap;
+}
+
+.clear{
+  flex: 1;
+  opacity: 0.5;
+}
+
+.filter-display-tab{
+  display: flex;
+}
+
+.filter-display-text{
+  background-color: var(--filter-tab-color);
+  color: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 10px 0 0 10px;
+  cursor: default;
+}
+
+.x-container{
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.filter-tab{
+  cursor: pointer;
+}
+.filter-tab:hover{
+  background-color: var(--primary);
+  color: white;
+}
+.x-container{
+  cursor: pointer;
+}
+.x-container:hover{
+  background-color: var(--dark-fg);
+}
+.clear{
+  cursor: pointer;
+}
+.clear:hover{
+  color: var(--primary);
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 900px){
+  .job-item{
+    font-size: 1rem;
+    display: flex;
+    padding: 2rem;
+    margin: 0;
+  }
+  .jobs-container{
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+  .job-item-content{
+    flex-direction: row;
+    margin: 0;
+    align-items: center;    
+    justify-content: space-between;
+  }
+  .content{
+    display: flex;
+    gap: 2rem;
+    flex: 3;
+  }
+  .filters{
+    flex: 1;
+  }
+  .line{
+    display: none;
+  }
+
+}
